@@ -9,14 +9,10 @@ public class BasicScanner {
         Scanner scanner = new Scanner(System.in);
        int exit = 1;
 
-       while (exit!=0){
-           int out= scanner.nextInt();
-           System.out.println("========" +out);
+     while (exit!=0){
 
-           System.out.println("ukoncenie programu stlac 0 a enter");
+         System.out.println("ukoncenie programu stlac 0 a enter");
            exit = scanner.nextInt();
        }
-
-
     }
 }
