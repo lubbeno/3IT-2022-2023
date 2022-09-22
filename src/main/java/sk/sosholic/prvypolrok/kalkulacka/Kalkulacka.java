@@ -22,6 +22,8 @@ public class Kalkulacka {
                     System.out.print("zadaj druhe cislo a stlac enter: ");
                     int scitanec2 = scanner.nextInt();
                     System.out.println("vysledok scitania je: "+ (scitanec1 + scitanec2));
+                    /// DOKONCIT ostatne pripady pre 2 3 4
+
             }
             System.out.println("ukoncenie programu stlac 0 a enter. Pre pokracovanie stlac 1");
             exit = scanner.nextInt();
