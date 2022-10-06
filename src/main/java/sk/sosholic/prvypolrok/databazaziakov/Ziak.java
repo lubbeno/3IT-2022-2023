@@ -1,5 +1,7 @@
 package sk.sosholic.prvypolrok.databazaziakov;
 
+import java.util.Objects;
+
 public class Ziak {
 
     private String meno;
@@ -34,5 +36,24 @@ public class Ziak {
 
     public void setVek(int vek) {
         this.vek = vek;
+    }
+
+    @Override
+    public String toString() {
+        return "Ziak{" +
+                "meno='" + meno + '\'' +
+                ", priezvisko='" + priezvisko + '\'' +
+                ", vek=" + vek +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return priezvisko.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(priezvisko);
     }
 }
