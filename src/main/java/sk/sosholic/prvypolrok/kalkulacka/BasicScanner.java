@@ -10,7 +10,8 @@ public class BasicScanner {
        int exit = 1;
 
      while (exit!=0){
-
+         System.out.println(scanner.next());
+         System.out.println(scanner.next());
          System.out.println("ukoncenie programu stlac 0 a enter");
            exit = scanner.nextInt();
        }
