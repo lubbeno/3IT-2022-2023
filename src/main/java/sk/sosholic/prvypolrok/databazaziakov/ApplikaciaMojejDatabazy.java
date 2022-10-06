@@ -12,11 +12,7 @@ public class ApplikaciaMojejDatabazy {
         //System.out.println(ziakList.toString());
         System.out.println(" Moja databaza spoluziakov ");
         while (!exit){
-            System.out.println("ak chces ukocit applikaciu stlac 0");
-            System.out.println("ak chces vytovrit zaznam stlac 1");
-            System.out.println("ak chces zmazat zaznam stlac 2");
-            System.out.println("ak chces zobrazit zaznam stlac 3");
-            System.out.println("ak chces zobrazit CELY zoznam stlac 4");
+            Mojemenu();
             System.out.print("Zadaj moznost: ");
             int menu = scanner.nextInt();
             switch (menu){
@@ -70,6 +66,12 @@ public class ApplikaciaMojejDatabazy {
        for(int i=1;i<=ziakList.size();i++){
            System.out.println(i+". "+ziakList.get(i-1));
        }
-
+    }
+    private static void Mojemenu(){
+        System.out.println("ak chces ukocit applikaciu stlac 0");
+        System.out.println("ak chces vytovrit zaznam stlac 1");
+        System.out.println("ak chces zmazat zaznam stlac 2");
+        System.out.println("ak chces zobrazit zaznam stlac 3");
+        System.out.println("ak chces zobrazit CELY zoznam stlac 4");
     }
 }
