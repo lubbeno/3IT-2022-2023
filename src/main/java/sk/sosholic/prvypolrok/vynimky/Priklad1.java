@@ -1,6 +1,7 @@
 package sk.sosholic.prvypolrok.vynimky;
 
 import java.io.*;
+import java.time.LocalDate;
 
 public class Priklad1 {
 
@@ -14,6 +15,8 @@ public class Priklad1 {
         }
         finally {
             System.out.println("tento kod sa vykona vzdy nezavisle o chyby");
+            System.out.println("casova znacka: "+LocalDate.now());
+            String s = "test";
         }
        // System.out.println("toto nikdy  nenasatne !!!!");
         System.out.println("toto je pokracovanie kodu");
