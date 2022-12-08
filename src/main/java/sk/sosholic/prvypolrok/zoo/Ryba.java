@@ -18,4 +18,6 @@ public class Ryba extends Animal{
                 "typVody='" + typVody + '\'' +
                 '}';
     }
+
+    //komentar na git
 }
