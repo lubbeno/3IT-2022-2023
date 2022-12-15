@@ -29,4 +29,7 @@ public class Chovatel {
     public String getMenoPriezvisko() {
         return menoPriezvisko;
     }
+    public List<Animal> getZoo(){
+        return zoo;
+    }
 }
