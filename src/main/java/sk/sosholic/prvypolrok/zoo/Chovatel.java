@@ -25,4 +25,8 @@ public class Chovatel {
         }
         return najdrahsieZviera;
     }
+
+    public String getMenoPriezvisko() {
+        return menoPriezvisko;
+    }
 }

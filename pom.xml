@@ -13,6 +13,13 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.hierynomus</groupId>
+            <artifactId>sshj</artifactId>
+            <version>0.34.0</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
