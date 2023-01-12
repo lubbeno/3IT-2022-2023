@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>sk.sosholic.prvypolrok.uvod.Main</mainClass>
+                            <mainClass>sk.sosholic.prvypolrok.zoo.MojeZoo</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

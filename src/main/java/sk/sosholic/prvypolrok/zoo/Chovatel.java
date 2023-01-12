@@ -1,7 +1,10 @@
 package sk.sosholic.prvypolrok.zoo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Chovatel {
 
@@ -30,6 +33,7 @@ public class Chovatel {
         return menoPriezvisko;
     }
     public List<Animal> getZoo(){
-        return zoo;
+        List<Animal> copyOfZoo = zoo.stream().collect(Collectors.toList());
+        return copyOfZoo;
     }
 }

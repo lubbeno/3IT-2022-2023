@@ -1,8 +1,10 @@
 package sk.sosholic.prvypolrok.zoo;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class MojeZoo {
+
     public static void main(String[] args) {
         String menoZoo;
         Chovatel mojChovatel;
@@ -16,6 +18,7 @@ public class MojeZoo {
         Animal sakal = new Animal("sakal",200);
         mojChovatel.pridatZviera(new Animal("kon",13000));
         mojChovatel.pridatZviera(sakal);
+        List<Animal> mojezoo = mojChovatel.getZoo();
 
         while (true){
             System.out.println("=========================================");
@@ -37,6 +40,32 @@ public class MojeZoo {
                     System.out.println("Meno Chovatela je " +mojChovatel.getMenoPriezvisko());
                     break;
                 case 3:
+
+
+                  /*  switch (){
+
+                        case ryba:
+                            System.out.print("zadaj meno zvierata: ");
+                            String meno = scanner.nextLine();
+                            System.out.print("zadaj cenu: ");
+                            double cena = scanner.nextDouble();
+                            mojChovatel.pridatZviera(new Ryba(meno,cena, slana voda));
+
+                        case hmyz:
+
+                            System.out.print("zadaj meno zvierata: ");
+                            String meno = scanner.nextLine();
+                            System.out.print("zadaj cenu: ");
+                            double cena = scanner.nextDouble();
+                            mojChovatel.pridatZviera(new Hmyz(meno,cena, pocet noh));
+                        case Animal:
+                            System.out.print("zadaj meno zvierata: ");
+                            String meno = scanner.nextLine();
+                            System.out.print("zadaj cenu: ");
+                            double cena = scanner.nextDouble();
+                            mojChovatel.pridatZviera(new Animal(meno,cena));
+                    }*/
+
                     System.out.print("zadaj meno zvierata: ");
                     String meno = scanner.nextLine();
                     System.out.print("zadaj cenu: ");
@@ -48,8 +77,9 @@ public class MojeZoo {
                     System.out.println(mojChovatel.getZoo());
                     break;
                 case 5:
-                    System.out.print(":najdrahsie zviera je: " +
+                    System.out.println(":najdrahsie zviera je: " +
                             mojChovatel.zistiNajdrahsieZviera().getAnimalType());
+                    break;
                 case 6:
                     System.exit(0);
             }
@@ -57,6 +87,5 @@ public class MojeZoo {
         }
 
     }
-
 
 }

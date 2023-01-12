@@ -19,5 +19,5 @@ public class Ryba extends Animal{
                 '}';
     }
 
-    //komentar na git
+
 }
