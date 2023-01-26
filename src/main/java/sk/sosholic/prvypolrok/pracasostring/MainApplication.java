@@ -4,21 +4,14 @@ public class MainApplication {
 
     public static void main(String[] args) {
 
+        Kniha kniha = new Kniha("J.R.R. Tolkien","",320);
+        System.out.println("nazov knihy je: "+ kniha.getNazovKnihy());
 
+        Auto pussyVagon = new Auto("",true);
+        System.out.println("nazov auta je: "+ pussyVagon.getNazov());
 
-        Kniha kniha = new Kniha();
-
-        kniha.nazovKnihy = "Pan Prstenov";
-        kniha.setAutor("J.R.R. Tolkien");
-        String tolkien = kniha.getAutor();
-
-/*
-        Osoba ondrej = new Osoba("Ondrej", "Novak", 55);
-
-        char samohlaska = 'a';
-        System.out.println("samohlaska " + samohlaska + " sa nachadza v priezvisku "
-                + ondrej.pocetSamohlaskyVPriezvisku(samohlaska) +" krat.");*/
-
+        /*Strom mojSrom = new Strom("",true, 4,5);
+        System.out.println("nazov stromu je: "+ mojStrom.getNazov());*/
     }
 
 }

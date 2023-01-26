@@ -20,4 +20,19 @@ public class Kniha {
         return this.autor;
     }
 
+    public String getNazovKnihy() {
+        return nazovKnihy;
+    }
+
+    public void setNazovKnihy(String nazovKnihy) {
+        this.nazovKnihy = nazovKnihy;
+    }
+
+    public int getPocetStran() {
+        return pocetStran;
+    }
+
+    public void setPocetStran(int pocetStran) {
+        this.pocetStran = pocetStran;
+    }
 }
