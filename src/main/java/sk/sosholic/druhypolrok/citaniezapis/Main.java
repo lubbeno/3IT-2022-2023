@@ -1,4 +1,4 @@
-package sk.sosholic.prvypolrok.citaniezapis;
+package sk.sosholic.druhypolrok.citaniezapis;
 
 import java.io.File;
 import java.io.FileWriter;
