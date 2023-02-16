@@ -1,4 +1,4 @@
-package sk.sosholic.druhypolrok.citaniezapis;
+package sk.sosholic.druhypolrok.zapis;
 
 public class FileWriter {
 
