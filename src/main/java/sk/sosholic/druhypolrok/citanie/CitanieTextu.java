@@ -1,15 +1,14 @@
 package sk.sosholic.druhypolrok.citanie;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.Scanner;
 
 public class CitanieTextu {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         //myFileReader("a.txt");
-        myBufferedFileReader("a.txt");
+       // myBufferedFileReader("a.txt");
+        readWithScanner("a.txt");
     }
 
     private static void myBufferedFileReader(String cestaKSubouru) {
@@ -19,13 +18,14 @@ public class CitanieTextu {
            String riadok ="";
            while (riadok != null){
                riadok = bufferedReader.readLine();
-               System.out.println(riadok);
+
            }
                 bufferedReader.close();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
     }
 
@@ -56,4 +56,20 @@ public class CitanieTextu {
             e.printStackTrace();
         }
     }
+
+    private static void readWithScanner(String cestaKSuboru)  {
+
+        Scanner scanner = null;
+        try {
+            scanner = new Scanner(new File(cestaKSuboru));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        while (scanner.hasNextLine()) {
+            System.out.println(scanner.nextLine());
+        }scanner.close();
+
+    }
+
 }

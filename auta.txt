@@ -1,0 +1,3 @@
+VolksWagen,1.9TDI,Diesel
+Skoda,1.4HTP,Benzin
+Ferrari,0L,Elektrika
