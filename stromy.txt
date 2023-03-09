@@ -1,0 +1,3 @@
+jasen,listnay,23,nema plod
+dub,listnaty,12,zaludy
+smrek,ihlicnaty,10,suska

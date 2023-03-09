@@ -1,5 +1,6 @@
 package sk.sosholic.druhypolrok.zapis;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,10 +13,10 @@ public class Main {
         file.close();
 
         File f = new File("","");
-/*
+
         BufferedWriter writer = new BufferedWriter(new FileWriter("test.txt"));
         writer.write("vlozeny text do suboru text.txt");
-        writer.close();*/
+       // writer.close();
 
     }
 }

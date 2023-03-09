@@ -1,0 +1,20 @@
+Podla vzoru ulohy nacitanie aut, vytvorte ulohu:
+mame subor stromy.txt. jeho obsah je
+
+jasen,listnay,23,nema plod
+dub,listnaty,12,zaludy
+smrek,ihlicnaty,10,suska
+
+Ulohu budete mat v balicku stromycitaniezapis
+v balicku budu dve triedy. Main a Strom
+v Main triede bude main metoda a dve dalsie staticke metody
+    metoda: zoSuboruList
+    metoda: zListuDoSuboru
+
+ vystupny subor bude mat nazov stromyVystup.txt
+
+ a bude obsahovat:
+
+ jasen-listnay-23-nema plod
+ dub-listnaty-12-zaludy
+ smrek-ihlicnaty-10-suska
